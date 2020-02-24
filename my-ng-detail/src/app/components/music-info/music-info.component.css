@@ -1,0 +1,14 @@
+.wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+.pic{
+    width: 120px;
+    margin: 16px;
+}
+.wrap p{
+    text-align: center;
+    width: 290px;
+}

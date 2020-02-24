@@ -1,0 +1,6 @@
+<div class="wrap">
+    <div *ngFor="let item of playlists" (click)="handleClick(item.id)">
+        <img class="cover" src={{item.coverImgUrl}} alt="">
+        <p class="name">{{item.name}}</p>
+    </div>
+</div>

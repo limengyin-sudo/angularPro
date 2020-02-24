@@ -1,0 +1,13 @@
+.wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cover{
+    width: 200px;
+    height: 200px;
+}
+.name{
+    width: 200px;
+}

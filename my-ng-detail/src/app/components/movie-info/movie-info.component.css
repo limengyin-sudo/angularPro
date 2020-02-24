@@ -1,0 +1,10 @@
+.wrap{
+    width: 100%;
+    display: flex;
+}
+.summary{
+    width: 1000px;
+    margin-left: 12px;
+    line-height: 26px;
+    color: #333;
+}

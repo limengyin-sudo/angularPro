@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.tab{
+    width: 100%;
+    line-height: 60px;
+    border-top: 2px solid #e0e0e0;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+}
+.tab li{
+    list-style: none;
+}
+.tab li a{
+    text-decoration: none;
+    color: #333;
+}
+.router-link-active{
+    color:#eb7070;
+}

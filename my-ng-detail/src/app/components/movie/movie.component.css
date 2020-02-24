@@ -1,0 +1,14 @@
+.wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.wrap>div{
+    margin: 20px;
+    text-align: center;
+}
+.cover{
+    width: 200px;
+    height: 300px;
+}

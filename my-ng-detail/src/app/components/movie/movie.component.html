@@ -1,0 +1,6 @@
+<div class="wrap">
+    <div *ngFor="let item of subjects" [routerLink]="['/movieInfo',item.id]">
+        <img class="cover" src={{item.images.small}} alt="">
+        <p class="name">{{item.title}}</p>
+    </div>
+</div>

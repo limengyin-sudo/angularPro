@@ -1,0 +1,42 @@
+<div class="wrap">
+  <div class="head">
+    <div class="logo-add center">
+      <p class="logo">ToDoList</p>
+      <input class="add" type="text" placeholder="添加ToDo" 
+      #add (keyup.enter)="handleEnter(add.value)" [(ngModel)]='value'/>
+    </div>
+  </div>
+  <div class="content center">
+    <div class="todoing">
+      <div class="head-count">
+        <h2>正在进行</h2>
+        <span class="todocount">{{this.todoList.length}}</span>
+      </div>
+      <ol class="todolist" *ngFor="let item of todoList;let key = index">
+        <li>
+          <input type="checkbox" (click)="changeTodo(key,true)" />
+          <p class="list">{{item.todo}}</p>
+          <a href="#" class="del" (click)="handleDel(key,true)">-</a>
+        </li>
+      </ol>
+    </div>
+    <div class="todone">
+      <div class="head-count">
+        <h2>已经完成</h2>
+        <span class="todocount">{{this.doneList.length}}</span>
+      </div>
+      <ol class="todolist todolistStyle" *ngFor="let item of doneList;let key = index">
+        <li>
+          <input type="checkbox" (click)="changeTodo(key,false)" 
+          checked='checked'/>
+          <p class="list">{{item.todo}}</p>
+          <a href="#" class="del" (click)="handleDel(key,false)">-</a>
+        </li>
+      </ol>
+    </div>
+    <p class="bottom">呼！终于完成了！！！
+      <a href="#" class="clear" (click)="clearData()">clear</a>
+    </p>
+  </div>
+  
+</div>
